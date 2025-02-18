@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.detekt)
 }
 
 android {
@@ -36,6 +37,18 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+    detekt{
+        config = files("$rootDir/detekt.yml")
+        buildUponDefaultConfig = true // Merges with default rules of detek
+        parallel = true
+        ignoreFailures = false // CI will fail if issues are found
+        reports {
+            html.enabled
+            xml.enabled
+            txt.enabled
+        }
+
     }
 }
 

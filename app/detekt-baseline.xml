@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues />
+  <CurrentIssues>
+    <ID>NewLineAtEndOfFile:Color.kt$com.example.sampleexppoc.ui.theme.Color.kt</ID>
+    <ID>NewLineAtEndOfFile:ExampleUnitTest.kt$com.example.sampleexppoc.ExampleUnitTest.kt</ID>
+    <ID>NewLineAtEndOfFile:MainActivity.kt$com.example.sampleexppoc.MainActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:Theme.kt$com.example.sampleexppoc.ui.theme.Theme.kt</ID>
+    <ID>NewLineAtEndOfFile:Type.kt$com.example.sampleexppoc.ui.theme.Type.kt</ID>
+  </CurrentIssues>
+</SmellBaseline>
