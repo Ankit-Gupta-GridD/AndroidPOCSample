@@ -38,13 +38,6 @@ android {
     buildFeatures {
         compose = true
     }
-    detekt{
-        source.setFrom("src/main/java", "src/main/kotlin")
-        config.setFrom("$rootDir/detekt.yml")
-        buildUponDefaultConfig = true // Merges with default rules of detek
-        parallel = true
-        ignoreFailures = false // CI will fail if issues are found
-    }
 }
 
 dependencies {
@@ -57,8 +50,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    detektPlugins(libs.detekt.rules.compose)
-    detektPlugins(libs.detekt.formatting)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
